@@ -7,8 +7,8 @@
     <displayShortName>{display_short_name}</displayShortName>
     <incomingServer type="imap">
       <hostname>{mail_hostname}</hostname>
-      <port>143</port>
-      <socketType>STARTTLS</socketType>
+      <port>993</port>
+      <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
