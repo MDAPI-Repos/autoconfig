@@ -23,7 +23,7 @@ class MyServer(BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/xml')
             self.end_headers()
             context = {
-                'hostname':             self.headers['Host'].replace('autoconf.', ''),
+                'hostname':             self.headers['Host'].replace('autoconfig.', ''),
                 'display_name':         os.environ.get('DISPLAY_NAME', ''),
                 'display_short_name':   os.environ.get('DISPLAY_SHORT_NAME', ''),
                 'mail_hostname':        os.environ.get('MAIL_HOSTNAME', ''),
