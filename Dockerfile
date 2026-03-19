@@ -1,4 +1,4 @@
-FROM alpine
+FROM gitlab.mdapi.ch/mdapi/dependency_proxy/containers/alpine
 
 ENV PACKAGES="\
   bash \
